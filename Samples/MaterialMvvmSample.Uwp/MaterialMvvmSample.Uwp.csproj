@@ -11,7 +11,7 @@
     <AssemblyName>MaterialMvvmSample.Uwp</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.18362.0</TargetPlatformVersion>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.19041.0</TargetPlatformVersion>
     <TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
@@ -152,20 +152,19 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
-      <Version>6.2.12</Version>
+      <Version>6.2.13</Version>
     </PackageReference>
     <PackageReference Include="Rg.Plugins.Popup">
       <Version>2.1.0</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
-      <Version>5.0.0.2012</Version>
+      <Version>5.0.0.2337</Version>
+    </PackageReference>
+    <PackageReference Include="XF.Material">
+      <Version>1.8.0</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\XF.Material\XF.Material.csproj">
-      <Project>{716c39e8-557f-4e2b-9b88-217e4c0ec5af}</Project>
-      <Name>XF.Material</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MaterialMvvmSample.Core\MaterialMvvmSample.Core.csproj">
       <Project>{b4880a99-7161-48b8-8eab-2054127142ab}</Project>
       <Name>MaterialMvvmSample.Core</Name>

@@ -15,6 +15,7 @@
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <ProvisioningType>manual</ProvisioningType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,10 +54,11 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARM64</MtouchArch>
-    <CodesignKey>iPhone Developer: Danielle Dustin Catap (9VEQRZL4UZ)</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignProvision>Generic Dev Profile</CodesignProvision>
+    <CodesignProvision>
+    </CodesignProvision>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchFastDev>true</MtouchFastDev>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
@@ -176,13 +178,16 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Autofac">
-      <Version>6.1.0</Version>
+      <Version>6.3.0</Version>
     </PackageReference>
     <PackageReference Include="Autofac.Extras.CommonServiceLocator">
       <Version>6.0.1</Version>
     </PackageReference>
     <PackageReference Include="Rg.Plugins.Popup">
       <Version>2.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="XF.Material">
+      <Version>1.8.0</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -196,10 +201,6 @@
     <BundleResource Include="Resources\ic_overflow%403x.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\XF.Material\XF.Material.csproj">
-      <Project>{716C39E8-557F-4E2B-9B88-217E4C0EC5AF}</Project>
-      <Name>XF.Material</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MaterialMvvmSample.Core\MaterialMvvmSample.Core.csproj">
       <Project>{B4880A99-7161-48B8-8EAB-2054127142AB}</Project>
       <Name>MaterialMvvmSample.Core</Name>
